@@ -1,9 +1,10 @@
 :root {
-    --primary-color-Rich-black: #333;
-    --secondary-color-Oxford-Blue: #333;
-    --accent1-color-YInMn-Blue: #333;
-    --accent2-color-SilverLake-Blue: #778DA9;
-    --white: #E0E1DD;
+
+    --primary-color-Rich-black: #FFFFFF;
+    --secondary-color-Oxford-Blue: #FFFFFF;
+    --accent1-color-YInMn-Blue: #FFFFFF;
+    --accent2-color-SilverLake-Blue: #FFFFFF;
+    --white: #FFFFFF;
     --poppins-regular: "Poppins", sans-serif;
     --poppins-regular-weight: 400;
     --poppins-thin: "Poppins", sans-serif;
@@ -19,9 +20,11 @@
     --nav-hover-background-color: var(--primary-color-Rich-black);
 }
 
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -29,35 +32,19 @@ body {
     font-weight: var(--poppins-regular-weight);
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    margin: 0;
-    padding: 0;
-}
 
-h1 {
-    font-size: 2rem;
-}
-
-h2 {
-    font-size: 1.5rem;
-}
-
-p {
-    font-family: var(--paragraph-font);
-    margin: 0;
-    padding: 0;
-}
+/* mobile **************************/
 
 header {
-    background-color: var(--nav-background-color);
+    background-color: #333;
     padding: 10px;
     color: var(--headline-color-on-color);
 }
 
 header h1 {
+    width: 190px;
     margin: auto 5px;
+    font-size: 20px;
 }
 
 #menu {
@@ -66,7 +53,7 @@ header h1 {
     background-color: var(--nav-background-color);
     color: var(--accent1-color);
     position: absolute;
-    top: 1.2rem;
+    top: 0.5rem;
     right: 1rem;
 }
 
@@ -75,13 +62,14 @@ header h1 {
 }
 
 #menu.open::before {
-    content: "X";
+    content: "❎";
 }
 
 .navigation {
     display: flex;
     flex-direction: column;
     list-style: none;
+    width: 100%;
 }
 
 .navigation a {
@@ -89,9 +77,9 @@ header h1 {
     padding: 1rem;
     text-align: center;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 16px;
     color: var(--nav-link-color);
-    width: 100%;
+
 }
 
 .navigation a:hover {
@@ -102,12 +90,14 @@ header h1 {
 
 .open a {
     display: block;
-    font-size: 1.5rem;
 }
 
 .hidden {
     display: none;
 }
+
+
+/* main */
 
 main {
     margin: 1rem auto;
@@ -115,36 +105,70 @@ main {
 }
 
 .home {
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid var(--headline-color-on-white);
     margin-bottom: 1rem;
     text-align: center;
 }
 
+.title {
+    margin-bottom: 20px;
+}
+
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    grid-gap: 20px;
     place-items: center;
     margin: 5px 20px;
 }
 
-figure {
-    background-color: #fff;
+
+
+.temple-card {
+    max-width: 300px;
+    height: 350px;
+    background-color: #333;
 }
 
-img {
+.temple-card {
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.temple-card img {
     width: 100%;
     height: auto;
 }
 
-figcaption {
-    font-size: smaller;
-    text-align: center;
+.temple-info {
+    margin-top: 10px;
 }
 
+.temple-info h2 {
+    font-size: 16px;
+    color: var(--secondary-color-Oxford-Blue);
+}
+
+.temple-info p {
+    font-size: 12px;
+    color: var(--accent1-color-YInMn-Blue);
+    padding: 5px;
+}
+
+.temple-info strong {
+    color: var(--headline-color-on-white);
+}
+
+
+/* Footer */
+
 footer {
-    background-color: var(--nav-background-color);
+    background-color: #333;
     color: var(--headline-color-on-color);
     text-align: center;
     padding: 1rem;
+}
+
+footer p {
+    font-size: 16px;
 }

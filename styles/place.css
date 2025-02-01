@@ -40,14 +40,14 @@
     /* these colors below should be chosen from among your palette colors above */
     --headline-color-on-white: var(--primary-color-Rich-black);
     /* headlines on a white background */
-    --headline-color-on-color: var(--accent3-color-Platinum);
+    --headline-color-on-color: var(--white);
     /* headlines on a colored background */
     --paragraph-color-on-white: var(--primary-color-Rich-black);
     /* paragraph text on a white background */
     --paragraph-color-on-color: var(--accent3-color);
     /* paragraph text on a colored background */
     --paragraph-background-color: var(--secondary-color-Oxford-Blue);
-    --nav-link-color: var(--accent3-color-Platinum);
+    --nav-link-color: var(--white);
     --nav-background-color: var(--secondary-color-Oxford-Blue);
     --nav-hover-link-color: var(--accent2-color-SilverLake-Blue);
     --nav-hover-background-color: var(--primary-color-Rich-black);
